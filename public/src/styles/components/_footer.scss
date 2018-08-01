@@ -1,0 +1,91 @@
+.footer {
+    background-color: $off-black;
+    border-top: 1px solid #c0b5c6;
+    text-align: center;
+}
+
+.footer form {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.footer h4 {
+    font-weight: 400;
+}
+
+.footer input {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.footer input:focus {
+    outline: none;
+}
+
+.footer input[type=email] {
+    background-color: $off-black;
+    border-bottom: 1px solid #a96af9;
+    border-left: 0;
+    border-right: 0; 
+    border-top: 0;
+    color: white;
+    height: 35px;
+    text-align: center;
+    width: 270px;
+    transition: width .3s ease-in-out;
+}
+
+.footer input[type=email]:focus {
+    width: 360px;
+}
+
+.footer input[type=submit] {
+    background-color: white;
+    border: 1px solid white;
+    color: $off-black;
+    height: 39px;
+    margin-left: 15px;
+    width: 120px;
+    cursor: pointer;
+}
+
+.footer input[type=submit]:active {
+    color: #a96af9;
+}
+
+.footer-menu li {
+    display: inline-block;
+    padding: 10px;
+}
+
+.footer-menu li a {
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.footer-menu li a:after {
+    border-bottom: 1px solid #c0b5c6;
+    transition: width .5s;
+    width: 0;
+    content: '';
+    display: block;
+}
+
+.footer-menu li a:hover:after {
+    width: 100%;
+}
+
+.social a {
+    display: inline-block;
+    padding: 0 10px 15px;
+}
+
+.social a:hover {
+    color: #a96af9;
+}
+
+small {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+}

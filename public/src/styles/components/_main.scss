@@ -1,0 +1,9 @@
+.article-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.article-item {
+    min-width: 300px;
+    max-width: 500px;
+}
