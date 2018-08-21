@@ -1,91 +1,94 @@
 .footer {
     background-color: $off-black;
-    border-top: 1px solid #c0b5c6;
+    border-top: 1px solid $off-white;
+    color: white;
     text-align: center;
-}
 
-.footer form {
-    margin-top: 10px;
-    margin-bottom: 30px;
-}
+    h4 {
+        font-weight: 400;
+    }
 
-.footer h4 {
-    font-weight: 400;
-}
+    form {
+        margin-bottom: $l-size;
+    }
 
-.footer input {
-    font-size: 12px;
-    font-weight: 300;
-}
+    input {
+        font-size: $s-size;
+        font-weight: 300;
+        letter-spacing: 1px;
 
-.footer input:focus {
-    outline: none;
+        &:focus {
+            outline: none;
+        }
+    }
 }
 
 .footer input[type=email] {
+    @extend %equal-border;
     background-color: $off-black;
-    border-bottom: 1px solid #a96af9;
     border-left: 0;
     border-right: 0; 
     border-top: 0;
     color: white;
-    height: 35px;
+    height: $l-size;
     text-align: center;
-    width: 270px;
-    transition: width .3s ease-in-out;
-}
+    width: $module * 9;
 
-.footer input[type=email]:focus {
-    width: 360px;
+    &:focus {
+        border-bottom: 1px solid $off-purple;
+    }
 }
 
 .footer input[type=submit] {
-    background-color: white;
-    border: 1px solid white;
-    color: $off-black;
-    height: 39px;
-    margin-left: 15px;
-    width: 120px;
+    background-color: $off-black;
+    border: 1px solid $off-white;
+    border-radius: $s-size * 0.5;
+    color: $off-white;
     cursor: pointer;
-}
+    height: 3.9rem;
+    margin-left: $s-size;
+    width: $module * 4;
 
-.footer input[type=submit]:active {
-    color: #a96af9;
+    &:hover {
+        border: 1px solid white;
+        color: white;
+    }
 }
 
 .footer-menu li {
     display: inline-block;
-    padding: 10px;
-}
+    padding: $s-size;
 
-.footer-menu li a {
-    font-size: 14px;
-    text-decoration: none;
-}
+    a {
+        font-size: $s-size * 1.2;
 
-.footer-menu li a:after {
-    border-bottom: 1px solid #c0b5c6;
-    transition: width .5s;
-    width: 0;
-    content: '';
-    display: block;
-}
+        &:after {
+            @extend %equal-border;
+            content: '';
+            display: block;
+            transition: width .5s;
+            width: 0;
+        }
 
-.footer-menu li a:hover:after {
-    width: 100%;
+        &:hover:after {
+            width: 100%;
+        }
+    }
 }
 
 .social a {
+    color: white;
     display: inline-block;
-    padding: 0 10px 15px;
-}
+    font-size: $m-size * 1.25;
+    padding: 0 $s-size $s-size;
 
-.social a:hover {
-    color: #a96af9;
+    &:hover {
+        color: $off-purple;
+    }
 }
 
 small {
     display: flex;
     justify-content: space-between;
-    padding: 0 30px;
+    padding: 0 $l-size;
 }
