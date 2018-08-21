@@ -38,9 +38,8 @@ const Gallery = ({ title }) => (
     <h2>{title}</h2>
     <div className="gallery-items">
       {photos.map ((el, index) => (
-        <div className="gallery-item">
+        <div key={index} className="gallery-item">
           <img 
-            key={index} 
             src={el.src} 
             alt={el.alt} 
           />

@@ -24,7 +24,9 @@ module.exports ={
             use: [
                 {
                     loader: 'file-loader', 
-                    options: {}
+                    options: {
+                        name: './src/styles/jpg/[hash]-[name].[ext]'
+                    }
                 }
             ]
         }]
