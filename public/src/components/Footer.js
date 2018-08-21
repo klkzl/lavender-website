@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 const footerItems = [
     {
@@ -7,15 +7,15 @@ const footerItems = [
     },
     {
         href: '#',
+        label: 'Zwroty'
+    },
+    {
+        href: '#',
         label: 'Polityka prywatności'
     },
     {
         href: '#',
         label: 'Warunki korzystania'
-    },
-    {
-        href: '#',
-        label: 'Zwroty'
     }
 ];
 
@@ -42,46 +42,55 @@ const footerMedia = [
     }
 ];
 
-class Footer extends Component {
-    render() {
-        return (
-            <footer className="footer">
-                <h4>Subskrypcja newslettera</h4>
-                <form>
-                    <input id="newsletter" name="email" placeholder="Podaj swoj email" required type="email" 
-                    />
-                    <input value="Subskrybuj" type="submit" />
-                </form>
-                <ul className="footer-menu">
-                {footerItems.map((el, index) => (
-                    <li key={index}>
-                        <a href={el.href}>
-                            {el.label}
-                        </a>
-                    </li>
-                ))}
-            </ul>
-                <h4>Follow us.</h4>
-                <div className="social">
-                    {footerMedia.map((el => (
-                        <a 
-                            key={el.icon.toString()} 
-                            href={el.href} 
-                            target="_blank"
-                        >
-                            <i className={el.icon}></i>
-                        </a>
-                    )))}
-                </div>
-                <div className="">
-                    <small>
-                        <p>Copyright © 2018. Wszelkie prawa zastrzeżone.</p>
-                        <p>Wykonanie: kl_kzl</p>
-                    </small>
-                </div>
-            </footer>
-        );
-    }
-};
+const Footer = ({ copyrights, newsletter, socialMedia }) => (
+    <footer className="footer">
+        <h4>{newsletter}</h4>
+        <form autoComplete="off">
+            <input 
+                id="newsletter" 
+                name="email" 
+                placeholder="Podaj swoj email" 
+                required type="email" 
+            />
+            <input 
+                value="Subskrybuj" 
+                type="submit" 
+            />
+        </form>
+        <ul className="footer-menu">
+            {footerItems.map(({ href, label }) => (
+                <li key={label}>
+                    <a href={href}>
+                        {label}
+                    </a>
+                </li>
+            ))}
+        </ul>
+        <h4>{socialMedia}</h4>
+        <div className="social">
+            {footerMedia.map(({ href, icon}) => (
+                <a 
+                    key={icon.toString()} 
+                    href={href} 
+                    target="_blank"
+                >
+                    <i className={icon}></i>
+                </a>
+            ))}
+        </div>
+        <div className="">
+            <small>
+                <p>{copyrights}</p>
+                <p>Wykonanie: klkzl</p>
+            </small>
+        </div>
+    </footer>
+); 
+
+Footer.defaultProps = {
+    newsletter: 'Subskrypcja newslettera',
+    socialMedia: 'Follow us.',
+    copyrights: 'Copyright © 2018. Wszelkie prawa zastrzeżone.'
+}
 
 export default Footer;

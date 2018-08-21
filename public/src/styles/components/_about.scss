@@ -1,0 +1,41 @@
+.about {
+  position: relative;
+
+  img {
+    @extend %background-image;
+  }
+}
+
+.about-text {
+  background-color: white;
+  border: 1px solid $off-black;
+  box-sizing: border-box;
+  color: $off-black;
+  display: flex;
+  flex-direction: column;
+  height: $module * 18;
+  margin: $xl-size;
+  opacity: .85;
+  padding: $xl-size;
+  position: absolute;
+  right: 0;
+  top: 15%;
+  width: $module * 15;
+
+  h2 {
+    @extend %equal-h2;
+  }
+
+  p {
+    font-size: $m-size * 1.2;
+    line-height: $m-size * 1.5;
+    overflow-y: scroll;
+    text-align: left;
+  }
+
+  button {
+    @extend %equal-button
+  }
+}
+
+

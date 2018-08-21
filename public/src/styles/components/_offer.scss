@@ -1,0 +1,42 @@
+.offer {
+  margin-top: $xl-size;
+  text-align: center;
+
+  h2 {
+    @extend %equal-h2;
+    padding: $xl-size;
+  }
+}
+
+.offer-items {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto $xl-size;
+  max-width: $module * 37;
+  justify-content: space-between;
+  width: 80%;
+
+  li {
+    border: 1px solid $off-purple;
+    box-sizing: border-box;
+    display: inline-block;
+    height: $module * 8;
+    list-style-type: none;
+    margin-bottom: $xl-size;
+    padding: $m-size;
+    width: $module * 10;
+
+    i {
+      display: block;
+      font-size: $xl-size;
+      margin-bottom: $m-size;
+    }
+  }
+
+  h3 {
+    font-size: $m-size * 1.4;
+    font-weight: 400;
+    margin: 0;
+  }
+}

@@ -1,9 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
+import mainBackground from '../styles/jpg/background.jpg';
 
 const navItems = [
     {
         href: '#',
-        label: 'Intro'
+        label: 'Strona główna'
     },
     {
         href: '#',
@@ -11,11 +12,11 @@ const navItems = [
     },
     {
         href: '#',
-        label: 'Oferta'
+        label: 'Galeria'
     },
     {
         href: '#',
-        label: 'Galeria'
+        label: 'Oferta'
     },
     {
         href: '#',
@@ -23,34 +24,32 @@ const navItems = [
     },
 ];
 
-class Header extends Component {
-    render() {
-        return (
-            <header className="header">
-                <div className="header-bar">
-                    <nav className="navbar">
-                        <a href="#" className="logo-link">Lavender Story</a>
-                        <ul className="header-nav">
-                            {/*
-                            {navItems.map(({href, label}) => (
-                            <li ><a href={href}>{label}</a> </li>
-                            ))}
-                            */}
-                            {navItems.map((el) => (
-                                <li key={el.label.toString()}>
-                                    <a href={el.href}>{el.label}</a>
-                                </li>
-                            ))}
-                        </ul>
-                    </nav>
-                </div>
-                <div className="main-title">
-                        <h1>Nunc turpis purus</h1>
-                        <p>Naturalne produkty | Sesje fotograficzne | Agroturystyka</p>
-                    </div>
-            </header>
-        );
-    }
+const Header = ({ logo, subtitle, title }) => (
+    <header className="header">
+        <img src={mainBackground} alt="background flowers" />
+        <div className="main-title">
+            <h1>{title}</h1>
+            <p>{subtitle}</p>
+        </div>
+        <div className="header-bar">
+            <nav className="navbar">
+                <a href="#" className="logo-link">{logo}</a>
+                <ul className="header-nav">
+                    {navItems.map(({ href, label }) => (
+                        <li key={label}>
+                            <a href={href}>{label}</a>
+                        </li>
+                    ))}
+                </ul>
+            </nav>
+        </div>
+    </header>
+);
+
+Header.defaultProps = {
+    title: 'Welcome to our Lavender Story',
+    subtitle: 'Naturalne produkty | Sesje plenerowe | Agroturystyka',
+    logo: 'Lavender Story'
 }
 
 export default Header;
