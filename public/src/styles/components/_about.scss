@@ -19,7 +19,7 @@
   padding: $xl-size;
   position: absolute;
   right: 0;
-  top: 15%;
+  top: 10%;
   width: $module * 15;
 
   h2 {
@@ -37,5 +37,3 @@
     @extend %equal-button
   }
 }
-
-

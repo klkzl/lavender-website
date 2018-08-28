@@ -1,0 +1,123 @@
+@media only screen and (max-width: 480px) {
+
+  // header
+  .main-title {
+    top: 40%;
+  }
+
+  .header-bar {
+    opacity: .9;
+  }
+
+  .navbar {
+    display: block;
+  }
+
+  .logo-link {
+    padding-left: $m-size;
+  }
+
+  .header-nav {
+    background-color: $off-black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: $s-size;
+
+    li {
+      margin-bottom: $s-size;
+      padding: 0 $s-size 0 $s-size;
+    }
+  }
+
+  // about
+  .about-text {
+    display: block;
+    height: $module * 19;
+    margin: 0;
+    left: 50%;
+    padding: $m-size;
+    right: 50%;
+    top: $module;
+    transform: translate(-50%, 0);
+    width: $module * 11;
+
+    h2 {
+      font-size: $m-size * 1.5;
+    }
+
+    p {
+      font-size: $m-size;
+      font-weight: 400;
+    }
+
+    button {
+      height: $module;
+    }
+  }
+
+  // offer
+  .offer {
+    margin-top: $m-size;
+
+    h2 {
+      padding: $l-size;
+    }
+  }
+
+  .offer-items {
+    margin: 0 auto;
+    padding: 0;
+    justify-content: space-around;
+
+    li {
+      margin-bottom: $s-size;
+    }
+  }
+
+  // gallery
+  .gallery {
+    margin-top: 0;
+  }
+
+  .gallery-items {
+    margin: 0 auto $m-size;
+    width: 90%;
+  }
+
+  .gallery-item {
+    margin: $s-size * 0.5;
+
+    img {
+      width: $module * 5;
+    }
+  }
+
+  // footer
+  .footer {
+    form {
+      margin-bottom: $s-size;
+    }
+
+    input[type=email] {
+      margin-bottom: $s-size;
+    }
+
+    input[type=submit] {
+      height: $module;
+      margin: 0 $m-size;
+    }
+  }
+
+  .footer-menu {
+    padding-left: 0;
+
+    li {
+      padding: $s-size * 0.5;
+    }
+  }
+
+  small {
+    padding: 0 $s-size * 0.5;
+  }
+}

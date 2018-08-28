@@ -46,15 +46,15 @@ const Footer = ({ copyrights, newsletter, socialMedia }) => (
     <footer className="footer">
         <h4>{newsletter}</h4>
         <form autoComplete="off">
-            <input 
-                id="newsletter" 
-                name="email" 
-                placeholder="Podaj swoj email" 
-                required type="email" 
+            <input
+                id="newsletter"
+                name="email"
+                placeholder="Podaj swoj email"
+                required type="email"
             />
-            <input 
-                value="Subskrybuj" 
-                type="submit" 
+            <input
+                value="Subskrybuj"
+                type="submit"
             />
         </form>
         <ul className="footer-menu">
@@ -69,9 +69,9 @@ const Footer = ({ copyrights, newsletter, socialMedia }) => (
         <h4>{socialMedia}</h4>
         <div className="social">
             {footerMedia.map(({ href, icon}) => (
-                <a 
-                    key={icon.toString()} 
-                    href={href} 
+                <a
+                    key={icon.toString()}
+                    href={href}
                     target="_blank"
                 >
                     <i className={icon}></i>
@@ -85,7 +85,7 @@ const Footer = ({ copyrights, newsletter, socialMedia }) => (
             </small>
         </div>
     </footer>
-); 
+);
 
 Footer.defaultProps = {
     newsletter: 'Subskrypcja newslettera',

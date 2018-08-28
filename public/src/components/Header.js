@@ -4,7 +4,7 @@ import mainBackground from '../styles/jpg/background.jpg';
 const navItems = [
     {
         href: '#',
-        label: 'Strona główna'
+        label: 'Top'
     },
     {
         href: '#',
@@ -12,11 +12,11 @@ const navItems = [
     },
     {
         href: '#',
-        label: 'Galeria'
+        label: 'Oferta'
     },
     {
         href: '#',
-        label: 'Oferta'
+        label: 'Galeria'
     },
     {
         href: '#',

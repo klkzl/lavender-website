@@ -17,7 +17,6 @@
         font-family: $font-extra;
         font-size: $xl-size;
         font-weight: 400;
-        // text-decoration: underline;
         margin-bottom: 0;
     }
 }
@@ -59,12 +58,20 @@
             content: '';
             display: block;
             padding-bottom: $s-size * 0.5;
-            transition: width .3s;    
+            transition: width .3s;
             width: 0;
         }
 
         &:hover:after {
             width: 100%;
+        }
+    }
+}
+
+@media (min-width: 400px) {
+    main title {
+        h1 {
+            text-decoration: underline;
         }
     }
 }
