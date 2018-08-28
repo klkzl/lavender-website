@@ -5,27 +5,23 @@ import Gallery from './Gallery';
 import Contact from './Contact';
 import Offer from './Offer';
 
-class Main extends React.Component {
-    render() {
-        return (
-            <div className="content">
-                <section>
-                    <About />
-                </section>
-                <section>
-                    <Offer />
-                </section>
-                <section>
-                    <Gallery />
-                </section>
-                {/*
-                <section>
-                    <Contact />
-                </section>
-                */}
-            </div>
-        );
-    }
-}
+const Main =() => (
+    <div className="content">
+        <section>
+            <About />
+        </section>
+        <section>
+            <Offer />
+        </section>
+        <section>
+            <Gallery />
+        </section>
+        {/*
+        <section>
+            <Contact />
+        </section>
+        */}
+    </div>
+)
 
 export default Main;
