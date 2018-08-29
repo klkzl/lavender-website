@@ -34,7 +34,7 @@ const offerOptions = [
 ]
 
 const Offer = ({ title }) => (
-  <div className="offer">
+  <div className="offer" id="offer">
     <h2>{title}</h2>
     <ul className="offer-items">
       {offerOptions.map(({ icon, title, content }) => (

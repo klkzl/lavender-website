@@ -7,7 +7,7 @@ const AboutText = {
 }
 
 const About = () => (
-  <div className="about">
+  <div className="about" id="about">
     <img src={backgroundPhoto} alt="lavender field" />
     <div className="about-text">
       <h2>{AboutText.title}</h2>

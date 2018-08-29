@@ -1,31 +1,33 @@
 import React from 'react';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
+
 import mainBackground from '../styles/jpg/background.jpg';
 
 const navItems = [
     {
-        href: '#',
+        href: '#top',
         label: 'Top'
     },
     {
-        href: '#',
+        href: '#about',
         label: 'O nas'
     },
     {
-        href: '#',
+        href: '#offer',
         label: 'Oferta'
     },
     {
-        href: '#',
+        href: '#gallery',
         label: 'Galeria'
     },
     {
-        href: '#',
+        href: '#contact',
         label: 'Kontakt'
     },
 ];
 
 const Header = ({ logo, subtitle, title }) => (
-    <header className="header">
+    <header className="header" id="top" >
         <img src={mainBackground} alt="background flowers" />
         <div className="main-title">
             <h1>{title}</h1>
@@ -34,10 +36,11 @@ const Header = ({ logo, subtitle, title }) => (
         <div className="header-bar">
             <nav className="navbar">
                 <a href="#" className="logo-link">{logo}</a>
+                <button className="menu-link">Menu</button>
                 <ul className="header-nav">
                     {navItems.map(({ href, label }) => (
                         <li key={label}>
-                            <a href={href}>{label}</a>
+                            <AnchorLink href={href}>{label}</AnchorLink>
                         </li>
                     ))}
                 </ul>

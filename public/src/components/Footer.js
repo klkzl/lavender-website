@@ -43,7 +43,7 @@ const footerMedia = [
 ];
 
 const Footer = ({ copyrights, newsletter, socialMedia }) => (
-    <footer className="footer">
+    <footer className="footer" id="contact">
         <h4>{newsletter}</h4>
         <form autoComplete="off">
             <input

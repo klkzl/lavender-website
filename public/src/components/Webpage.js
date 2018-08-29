@@ -5,7 +5,7 @@ import Main from './Main';
 
 const Webpage = () => (
     <div>
-        <Header/>
+        <Header />
         <Main />
         <Footer />
     </div>

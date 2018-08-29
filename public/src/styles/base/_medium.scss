@@ -30,10 +30,10 @@
   }
 
   // about
-  .about-text {
+   .about-text {
     display: block;
     left: 50%;
-    margin: 0;
+    margin: $xl-size 0 0 0;
     padding: $l-size;
     right: 50%;
     transform: translate(-50%, 0);
@@ -45,7 +45,8 @@
 
   // offer
   .offer {
-    margin-top: $m-size;
+    margin: 0;
+    padding-top: $xl-size * 1.5;
 
     h2 {
       padding: $l-size;
@@ -53,20 +54,26 @@
   }
 
   .offer-items {
+    margin-bottom: 0;
     padding: 0;
-    margin-bottom: $m-size;
 
     li {
       flex: 0 0 100%;
       height: $module * 7;
       margin-bottom: $m-size * 1.5;
       padding: $s-size;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
+
   }
 
   // gallery
   .gallery {
     margin-top: 0;
+    padding-top: $xl-size;
   }
 
   .gallery-items {

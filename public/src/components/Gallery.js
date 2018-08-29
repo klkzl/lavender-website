@@ -34,7 +34,7 @@ const photos = [
 ];
 
 const Gallery = ({ title }) => (
-  <div className="gallery">
+  <div className="gallery" id="gallery">
     <h2>{title}</h2>
     <div className="gallery-items">
       {photos.map ((el, index) => (

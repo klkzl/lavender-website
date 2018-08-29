@@ -5,6 +5,7 @@
   h2 {
     @extend %equal-h2;
     padding: $l-size;
+    padding-top: $xl-size * 1.5;
   }
 }
 
