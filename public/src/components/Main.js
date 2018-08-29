@@ -4,6 +4,8 @@ import About from './About';
 import Gallery from './Gallery';
 import Offer from './Offer';
 
+import Slider from './Slider';
+
 const Main =() => (
     <div className="content">
         <section>
@@ -12,14 +14,10 @@ const Main =() => (
         <section>
             <Offer />
         </section>
-        <section>
-            <Gallery />
-        </section>
-        {/*
-        <section>
-            <Contact />
-        </section>
-        */}
+        {/*<section>
+        <Gallery />
+        </section>*/}
+        <Slider />
     </div>
 )
 
