@@ -1,48 +1,55 @@
 import React, { Component } from "react";
 import ImageGallery from "react-image-gallery";
 
-import firstPhoto from '../styles/jpg/1.jpg';
-import secondPhoto from '../styles/jpg/2.jpg';
-import thirdPhoto from '../styles/jpg/3.jpg';
-import fourthPhoto from '../styles/jpg/4.jpg';
-import fifthPhoto from '../styles/jpg/5.jpg';
-import sixthPhoto from '../styles/jpg/6.jpg';
-import firstPhotot from '../styles/jpg/1t.jpg';
-import secondPhotot from '../styles/jpg/2t.jpg';
-import thirdPhotot from '../styles/jpg/3t.jpg';
-import fourthPhotot from '../styles/jpg/4t.jpg';
-import fifthPhotot from '../styles/jpg/5t.jpg';
-import sixthPhotot from '../styles/jpg/6t.jpg';
+import firstPhotoB from '../styles/jpg/1b.jpg';
+import secondPhotoB from '../styles/jpg/2b.jpg';
+import thirdPhotoB from '../styles/jpg/3b.jpg';
+import fourthPhotoB from '../styles/jpg/4b.jpg';
+import fifthPhotoB from '../styles/jpg/5b.jpg';
+import sixthPhotoB from '../styles/jpg/6b.jpg';
+import seventhPhotoB from '../styles/jpg/7b.jpg';
+import firstPhotoT from '../styles/jpg/1t.jpg';
+import secondPhotoT from '../styles/jpg/2t.jpg';
+import thirdPhotoT from '../styles/jpg/3t.jpg';
+import fourthPhotoT from '../styles/jpg/4t.jpg';
+import fifthPhotoT from '../styles/jpg/5t.jpg';
+import sixthPhotoT from '../styles/jpg/6t.jpg';
+import seventhPhotoT from '../styles/jpg/7t.jpg';
 
 const photos = [
   {
-    original: firstPhoto,
-    thumbnail: firstPhotot,
+    original: firstPhotoB,
+    thumbnail: firstPhotoT,
     originalAlt: 'lavender summer'
   },
   {
-    original: secondPhoto,
-    thumbnail: secondPhotot,
+    original: secondPhotoB,
+    thumbnail: secondPhotoT,
     originalAlt: 'lavender summer'
   },
   {
-    original: thirdPhoto,
-    thumbnail: thirdPhotot,
+    original: thirdPhotoB,
+    thumbnail: thirdPhotoT,
     originalAlt: 'lavender summer'
   },
   {
-    original: fourthPhoto,
-    thumbnail: fourthPhotot,
+    original: fourthPhotoB,
+    thumbnail: fourthPhotoT,
     originalAlt: 'lavender flowers'
   },
   {
-    original: fifthPhoto,
-    thumbnail: fifthPhotot,
+    original: fifthPhotoB,
+    thumbnail: fifthPhotoT,
     originalAlt: 'lavender field'
   },
   {
-    original: sixthPhoto,
-    thumbnail: sixthPhotot,
+    original: sixthPhotoB,
+    thumbnail: sixthPhotoT,
+    originalAlt: 'rainbow above lavender'
+  },
+  {
+    original: seventhPhotoB,
+    thumbnail: seventhPhotoT,
     originalAlt: 'rainbow above lavender'
   }
 ];

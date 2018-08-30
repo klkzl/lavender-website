@@ -1,11 +1,3 @@
-// import React from 'react';
-// import firstPhoto from '../styles/jpg/1small.jpg';
-// import secondPhoto from '../styles/jpg/2small.jpg';
-// import thirdPhoto from '../styles/jpg/3small.jpg';
-// import fourthPhoto from '../styles/jpg/4small.jpg';
-// import fifthPhoto from '../styles/jpg/5small.jpg';
-// import sixthPhoto from '../styles/jpg/6small.jpg';
-
 // const photos = [
 //   {
 //     src: firstPhoto,
